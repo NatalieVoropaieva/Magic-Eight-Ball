@@ -1,0 +1,115 @@
+body {
+    padding: 0;
+    margin:0;
+}
+.header {
+    height: 60px;
+    background-color: #0C7C59;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    margin: 0 20px;
+    color: white;
+    font-family: 'Cinzel';
+    font-weight: bold;
+}
+.questionForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    margin-top: 60px;
+
+}
+.questionForm input {
+    margin-bottom: 10px;
+    border: 1px solid #86898f;
+    border-radius: 3px;
+    padding: 6px 12px;
+    font-family: 'Cinzel';
+    font-weight: bold;
+}
+.questionForm button {
+    background-color: #0C7C59;
+    color: white;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 12px;
+    outline: none;
+    transition: opacity 0.3s ease-out;
+    cursor: pointer;
+}
+.questionForm button:hover {
+    opacity: 0.8;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ball {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.ballBackground {
+    background: rgb(115,115,116);
+    background: radial-gradient(circle, rgba(115,115,116,1) 0%, rgba(73,73,77,1) 26%, rgba(0,0,0,1) 88%);
+    position: absolute;
+    height: 800px;
+    width: 700px;
+    top: -280px;
+    left: -200px;
+}
+.triangle {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 85px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.triangleBody {
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-top: 200px solid #5b5b5e;
+    position: absolute;
+    left: -100px;
+    right: -100px;
+    margin: auto;
+}
+.answer {
+
+    width: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 0;
+    text-align: center;
+    color: white;
+    cursor: default;
+    user-select: none;
+    font-size: 30px;
+    font-family: "Special Elite";
+    top: 15px;
+}
+.eight {
+    position: absolute;
+    color:white;
+    font-size: 200px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 20px;
+    font-weight: bold;
+    cursor: default;
+    user-select: none;
+}
